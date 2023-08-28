@@ -1,0 +1,816 @@
+body{
+  margin: 0;
+  background-color:white;
+  padding: 0;
+}
+
+/* !! Forgot Password  */
+.picture_Forgot_Password{
+  margin:-5vmax auto;
+  width: 100%;
+  height: 40vmax;
+  background-position: -4vmax;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Img/ImgForgotPassword.png');
+}
+.Information_text_forgot_password{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: -2vmax;
+  font-family: roboto,sans-serif;
+}
+.background_forgot_password_for_reset_password{
+  width: 85%;
+  margin:-8vmax auto;
+  text-align: center;
+  display: flex;
+  gap: 4vmax;
+  flex-direction: column;
+  height: min-content;
+}
+.text_forgot_password{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 4vmax;
+  font-family: sans-serif;
+}
+.btn_reset_password{
+  width: 80%;
+  margin:3vmax auto;
+  color: white;
+}
+/* !! Home page  */
+.picture{
+  margin:5vmax auto;
+  width: 100%;
+  height: 40vmax;
+  background-position: -3vmax;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Img/HomeIlustration.png');
+}
+.F{
+  color: blueviolet;
+  font-size: 2rem;
+}
+.R{
+  color: darkcyan;
+  font-size: 2rem;
+}
+.border_text{
+  width: 95%;
+  text-align: center;
+  height:min-content;
+  margin:-5vmax auto;
+}
+.Say_Hello_Home{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.Content_Home{
+  width: 85%;
+  font-family: roboto,sans-serif;
+  font-size: 1.2rem;
+  color:rgb(149, 140, 140) ;
+  margin:1vmax auto;
+  font-weight: 600;
+}
+
+/* !! button login */
+.Login_btn{
+  width: 75%;
+  height: 7vmax;
+  border: none;
+  font-family: roboto,sans-serif;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+  background-color: darkcyan;
+  margin-top: 6vmax;
+  color: white;
+}
+
+.Sign_up__btn{
+  width: 75%;
+  height: 7vmax;
+  font-family: roboto,sans-serif;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  margin-top: 3vmax;
+}
+
+/* !! Login */
+
+.row_back{
+  margin-left: 10%;
+  margin-top: 7vmax;
+  background-size: 3vmax;
+  background-color: none;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Icons/arrow.png');
+  height: 6vmax;
+  width: 30%;
+  
+}
+.input_password{
+  margin-top: 3vmax;
+}
+.Text_login{
+  font-family: roboto,sans-serif;
+  font-size: 2.7rem;
+  margin-top: 2vmax;
+  text-indent: 10%;
+}
+
+.Sign_In_To_Continue{
+  text-indent: 10%;
+  font-size: 1.5rem;
+  color: darkcyan;
+  margin-top: -1vmax;
+  font-family: roboto,sans-serif;
+}
+.background_form{
+  width: 80%;
+  margin:4vmax auto;
+  height: 50vmax;
+}
+.Login_btn_login{
+  width: 50%;
+  margin-top: 3vmax;
+  margin-left: 25%;
+  color: white;
+}
+.Login_btn_Register{
+  width: 70%;
+  margin-top: 3vmax;
+ margin-left: 14%;
+  
+}
+.text_forgot_password_login{
+  font-size: 1.1rem;
+  font-family: roboto,sans-serif;
+  text-align: center;
+  margin-top: 2.5vmax;
+  font-weight: bold;
+  color: rgb(116, 112, 112);
+}
+.border_or{
+  width: 95%;
+  height: min-content;
+  margin:6vmax auto;
+  justify-content: space-around;
+  display: flex;
+}
+.line{
+  background-color: rgb(175, 175, 175);
+  height: 3px;
+  margin-top: 1vmax;
+  width: 40%;
+}
+.text_or{
+  margin-top: -1vmax;
+  font-weight: bold;
+  text-align: center;
+}
+.text_social_login{
+  text-align: center;
+  margin-top: -5vmax;
+  color: darkcyan;
+  font-size: 1.5rem;
+  font-family: Roboto,sans-serif;
+}
+.social_media_login{
+  width: 50%;
+  justify-content: space-evenly;
+  display: flex;
+  height: 8vmax;
+  margin:2vmax auto;
+  
+}
+
+/* !! Loading */
+.dots-bars-1 {
+  width: 40px;
+  height: 40px;
+  margin:50vmax auto;
+  --c: linear-gradient(currentColor 0 0);
+  --r1: radial-gradient(farthest-side at bottom,currentColor 93%,#0000);
+  --r2: radial-gradient(farthest-side at top   ,currentColor 93%,#0000);
+  background: 
+    var(--c) ,
+    var(--r1),
+    var(--r2),
+    var(--c) ,  
+    var(--r1),
+    var(--r2),
+    var(--c) ,
+    var(--r1),
+    var(--r2);
+  background-repeat: no-repeat;
+  animation: db1 1s infinite  alternate;
+}
+
+@keyframes db1 {
+  0%,10% {
+    background-size: 8px 0,8px 4px,8px 4px;
+    background-position: 0 50%,0 calc(50% - 2px),0 calc(50% + 2px),50% 50%,50% calc(50% - 2px),50% calc(50% + 2px),100% 50%,100% calc(50% - 2px),100% calc(50% + 2px);
+ }
+ 90%,100% {
+    background-size: 8px 100%,8px 4px, 8px 4px;
+    background-position: 0 50%,0 -2px,0 calc(100% + 2px),50% 50%,50% -2px,50% calc(100% + 2px),100% 50%,100% -2px,100% calc(100% + 2px);
+ }
+}
+.backgroundLoading{
+  background-color: rgba(255, 252, 252, 0.8);
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  height: 100vmax;
+}
+/* !! Menu Contact */
+.menu_contact{
+ position: absolute;
+ z-index: 4;
+}
+/* !! Home */
+.background_home_pp_notification{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: min-content;
+  margin:4vmax auto;
+  overflow: hidden;
+}
+
+.background_Search{
+  width: 90%;
+  margin:5vmax auto;
+}
+.input{
+  width: 100%;
+}
+.Actif_Chat{
+  width: 20%;
+  margin-top: 3vmax;
+  height: 7vmax;
+  background-size: 4vmax;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Icons/chatactive.png');
+}
+.Non_Actif_Chat{
+  width: 20%;
+  margin-top: 3vmax;
+  height: 7vmax;
+  background-size: 4vmax;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Icons/chatnoactive.png');
+}
+.Actif_Setting{
+  width: 9%;
+  margin-top: 3vmax;
+  height: 7vmax;
+  background-size: 4vmax;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Icons/useractive.png');
+}
+.Non_Actif_Setting{
+  width: 9%;
+  margin-top: 3vmax;
+  height: 7vmax;
+  background-size: 4vmax;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Icons/usernoactive.png');
+}
+.Actif_Create_Messange{
+  width: 20%;
+  margin-top: 3vmax;
+  height: 7vmax;
+  background-size: 4vmax;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Icons/CreateMessangeActive.png');
+}
+.Non_Actif_Create_Messange{
+  width: 20%;
+  margin-top: 3vmax;
+  height: 7vmax;
+  background-size: 4vmax;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Icons/CreateMessange.png');
+}
+.background_card_dinamis{
+  width: 95%;
+  margin:4vmax auto;
+}
+.logo{
+  width: 20%;
+  font-family: roboto,sans-serif;
+  height: min-content;
+}
+.circle{
+  width: 15%;
+  height: 7vmax;
+  background-color: rgb(111, 99, 123);
+}
+.background_title_messange{
+  width: 35%;
+  background-color: rgb(195, 195, 219,.4);
+  height: 5vmax;
+  margin-top: 2vmax;
+  border-radius: 90px;
+  margin-left: 4vmax;
+}
+.Messange_title{
+  color: white;
+  text-align: center;
+  line-height: 5vmax;
+  font-size: 1.3rem;
+}
+.background_Navigasi_Bar{
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 0;
+  display: flex;
+  box-shadow: -1px -1px 2px 1px rgb(170, 158, 158);
+  height: 8vmax;
+  z-index: 1;
+  background-color:rgb(246, 237, 238) ;
+  position: fixed;
+}
+.background_say_hello{
+  width: 100%;
+  position: absolute;
+  height:min-content;
+  border-radius: 30px 30px 0 0;
+  margin:2vmax auto;
+  background-color:rgb(212, 59, 85);
+  ;
+}
+.Say_Hello{
+  font-size: 2rem;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  line-height: 15vmax;
+}
+
+/* !! Loading Information */
+.main-item {
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.background-masker {
+  background-color: #fff;
+  position: absolute;
+}
+
+.btn-divide-left {
+  top: 0;
+  left: 25%;
+  height: 100%;
+  width: 5%;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -800px 0
+  }
+  100% {
+    background-position: 800px 0
+  }
+}
+
+.animated-background {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  height: 70px;
+  position: relative;
+}
+
+.static-background {
+  background-color: #f6f7f8;
+  background-size: 800px 104px;
+  height: 70px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.shared-dom {
+  width: 800px;
+  height: 110px;
+}
+.sub-rect {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+.pure-background {
+  background-color: #eee;
+}
+
+.css-dom:empty {
+  width: 280px;
+  height: 220px;
+  border-radius: 6px;
+  box-shadow: 0 10px 45px rgba(0, 0, 0, .2);
+  background-repeat: no-repeat;
+  
+  background-image:
+    radial-gradient(circle 16px, lightgray 99%, transparent 0),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(lightgray, lightgray),
+    linear-gradient(#fff, #fff); 
+  
+  background-size:
+    32px 32px,
+    200px 32px,
+    180px 32px,
+    230px 16px,
+    100% 40px,
+    280px 100%;
+  
+  background-position:
+    24px 30px,
+    66px 30px,
+    24px 90px,
+    24px 142px,
+    0 180px,
+    0 0;
+}
+/* !! Verifikasi Email */
+.background_text_verify_email{
+  width: 85%;
+  margin:7vmax auto;
+  height: min-content;
+  font-family: sans-serif;
+}
+.text_check_verify{
+  font-size: 1.3rem;
+  text-align: center;
+  
+}
+.text_verify_email{
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 400;
+  color: black;
+}
+.verifikasi_btn{
+  width: 70%;
+  margin-left: 14%;
+  margin-top: -10vmax;
+  color: black;
+}
+.picture_Verifikasi_Email{
+  margin:5vmax auto;
+  width: 80%;
+  height: 30vmax;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Icons/email.png');
+}
+/* !! Create Messange*/
+.Name_Messange_from_Login{
+  text-align: center;
+  color: white;
+  margin-top: 1vmax;
+  font-size: 1.5rem;
+}
+.text_Name_CreateMessange{
+  text-align: center;
+  font-weight: bold;
+  font-family: roboto,sans-serif;
+  line-height: 7vmax;
+  font-size: 1.1rem;
+  color: white;
+}
+.background_for_name_and_back{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin:2vmax auto;
+  height: 8vmax;
+}
+.Background_settings{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  --background_color:rgb(212, 59, 85);
+  background-color:var(--background_color) ;
+}
+.background-Messange{
+  width: 100%;
+  position: fixed;
+  margin-top: 12vmax;
+  border-radius: 30px 30px 0 0;
+  height:100vh;
+  background-color: white;
+}
+.background_none{
+  width: 100%;
+  height: 2vmax;
+}
+.row_back_Home{
+  position: absolute;
+  margin-top: 2vmax;
+  margin-left: -15%;
+  background-size: 3vmax;
+  background-color: none;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Icons/arrow.png');
+  height: 6vmax;
+  width: 30%;
+}
+.Input_Messange_Background_all{
+  width: 90%;
+  height: min-content;
+ display: flex;
+ position: relative;
+ flex-direction: column;
+ gap: 2vmax;
+ margin:15vmax auto;
+}
+
+/* !! Settings */
+.text_logout{
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+.Border_title_settings{
+  width: 90%;
+  border-radius: 90pc;
+  margin:4vmax auto;
+  height: 8vmax;
+  background-color: darkgray;
+}
+.settings_text{
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 8vmax;
+  color: rgb(255, 245, 245);
+  font-family: roboto,sans-serif;
+}
+.avatar_one{
+  display: flex;
+  justify-content: center;
+  margin-top: 5vmax;
+}
+.say_hello_settings{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3vmax;
+}
+.large_Name{
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 3vmax;
+  text-align: center;
+}
+.large_Name_all{
+  margin-top: 3vmax;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.Login_with_google_background{
+  display: flex;
+  justify-content: center;
+  margin-top: 2vmax;
+}
+.All_bakcgorund_settings{
+  width: 90%;
+  height:min-content;
+}
+.background_edit_profile_settings{
+  width: 90%;
+  height: min-content;
+  display: flex;
+  font-family: roboto,sans-serif;
+  margin:5vmax auto;
+}
+.background_change_password{
+  font-family: roboto,sans-serif;
+  display: flex;
+  width: 90%;
+  height: max-content;
+  margin:-3vmax auto;
+}
+.background_Information{
+  width: 90%;
+  font-family: roboto,sans-serif;
+  height: max-content;
+  display: flex;
+  margin:5vmax auto;
+}
+.background_LogOut{
+  display: flex;
+  width: 90%;
+  height: 9vmax;
+  font-family: roboto,sans-serif;
+  margin:-3vmax auto;
+}
+.text_edit_profile{
+  font-size: 1.5rem;
+  text-indent: 3vmax;
+  font-weight: bold;
+  line-height: 9vmax;
+}
+.btn_edit{
+  background-color: aliceblue;
+}
+.pencil{
+  width: 3vmax;
+}
+.key{
+  width: 3vmax;
+}
+.logout{
+  width: 3vmax;
+}
+
+/* !! Edit Profile */
+.background_edit_profile{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vmax;
+  margin:5vmax auto;
+  height: min-content;
+}
+.avatar_edit_profile{
+  position: absolute;
+  margin-left: 25vw;
+}
+.input_edit_profile{
+  margin-top:19vmax ;
+}
+
+/* !! Information */
+.background_Text_and_logo_information{
+  width: 88%;
+  margin:2vmax auto;
+  height: min-content;
+}
+.Information_text{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: roboto,sans-serif;
+}
+.background_search{
+  width: 90%;
+  margin:4vmax auto;
+}
+.row_back_Information{
+  margin-left: 5%;
+  margin-top: 7vmax;
+  background-size: 3vmax;
+  background-color: none;
+  background-repeat: no-repeat;
+  background-image: url('../assets/Icons/arrow.png');
+  height: 6vmax;
+  width: 30%;
+}
+.text_top_questions{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(89, 84, 84);
+  text-indent: 4vmax;
+  font-family: roboto,sans-serif;
+}
+.background_data_information{
+  width: 90%;
+  margin:3vmax auto;
+}
+.text_title_information{
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 30px 30px 0 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 24vmax;
+}
+.background_modal_popup{
+  width: 90%;
+  height: min-content;
+  display: flex;
+  margin:3vmax auto;
+  justify-content: space-between;
+}
+.line_modal{
+  width: 85%;
+  height: 3px;
+  border-radius: 10px;
+  margin:1vmax auto;
+  background-color: hsl(0, 3%, 76%,.5);
+}
+.LogoutTextTitle{
+  font-size: 1.1rem;
+  font-family: roboto,sans-serif;
+}
+.btn_cancel{
+  width: 46%;
+}
+.btn_logout{
+  width: 46%;
+  color: white;
+}
+.text_popup_modal{
+  font-size: 1.1rem;
+  margin-top: 2vmax;
+  font-family: roboto,sans-serif;
+  text-align: center;
+}
+.txt_logout{
+  text-align: center;
+  margin-top: 2vmax;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+/* !! Change Password */
+.border_change_password{
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  height: 65vh;
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  background-color: #d8b2b2;
+} 
+.logo_change_password{
+  width:max-content;
+  margin:2vmax auto;
+  height: min-content;
+}
+.F_Change_Password{
+  color: blueviolet;
+  font-size: 3.5rem;
+}
+.R_Change_Password{
+  color: darkcyan;
+  font-size: 3.5rem;
+}
+.text_change_password{
+  text-align: center;
+  margin-top: 7vmax;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+.txt_paragraf_change_password{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3vmax;
+  color: rgb(247, 247, 247);
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.border_input_password_change_password{
+    width: 90%;
+    height: max-content;
+    margin:4vmax auto;
+}
+.bg_change_password{
+  width: 100%;
+  color: white;
+  margin:6vmax auto;
+  height: 7vmax;
+  text-align: center;
+}
